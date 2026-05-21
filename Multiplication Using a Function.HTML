@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Multiplication Function</h3>
+
+<input id="a" type="number" placeholder="Number 1">
+<input id="b" type="number" placeholder="Number 2">
+<button onclick="showMultiply()">Multiply</button>
+
+<p id="out"></p>
+
+<script>
+  function multiply(x, y) {
+    return x * y;
+  }
+
+  function showMultiply() {
+    const n1 = Number(document.getElementById("a").value);
+    const n2 = Number(document.getElementById("b").value);
+    document.getElementById("out").innerText =
+      "Result: " + multiply(n1, n2);
+  }
+</script>
+
+</body>
+</html>
